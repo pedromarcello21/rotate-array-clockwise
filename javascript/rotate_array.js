@@ -1,5 +1,8 @@
 function rotateArray(arr, k) {
   // type your code here
+  const n = arr.length
+  let normal = k % n
+  return arr.slice(-normal).concat(arr.slice(0,-normal))
 }
 
 if (require.main === module) {
